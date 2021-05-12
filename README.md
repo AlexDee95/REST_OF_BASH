@@ -8,7 +8,7 @@
 
 ## "What's in this repository?"
 
-This repository contains the jupyter book for the project <project_name> conducted within <lecture_name_year>.
+This repository contains the jupyter book for the project *LASERPIN* conducted within **Methodological Working in the Neurosciences**.
 
 Please provide further information you would like to include here.
 
