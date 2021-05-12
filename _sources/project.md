@@ -25,7 +25,8 @@ Please provide a general project outline and management plan.
   * results:
 
 * What computing environment will be utilized for the different project steps?
+  * our Laptop with the different programms noticed above 
 
 * How will the steps be documented and version controlled?
   * steps will be documented on GitHub and on GitKraken
-  * 
+  
