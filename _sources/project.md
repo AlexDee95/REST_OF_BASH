@@ -22,6 +22,7 @@ Please provide a general project outline and management plan.
   * data analysis: 
     * descriptives: jamovi
     * interference statistics:
+    * eeg:
   * results:
 
 * What computing environment will be utilized for the different project steps?
