@@ -17,11 +17,8 @@ Please provide information concerning the dataset you utilized, as well as it's 
     * schizophrenia AND eeg AND language (not very useful) 
 
 * How was the dataset obtained?
-  * downloading 
-  * actually we are asking at Judith Ford for the raw data  
 
 * What kind of data was utilized within the project?
-  * data from EEG (64 electrodes - 9 electrodes of interest)  
 
 * What kind of data was generated within the project?
 
@@ -32,8 +29,6 @@ Please provide information concerning the dataset you utilized, as well as it's 
 * How will the data be archived, exchanged and published?
 
 * Who is responsible for the data and what are the duties associated with it?
-  * Judith Ford is the author of the paper and the project 
-  * Brian Roach uploaded the data on "kaggle.com" 
 
 * What costs and resources are associated with the project?
   * no costs foreseeable 
