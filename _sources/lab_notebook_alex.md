@@ -11,7 +11,7 @@
 
 ## Search for raw EEG data:
 
-    - it has turned out to be quite difficult to find suitable **raw** EEG data of schizophrenia patients for our purposes
+    - it has turned out to be quite difficult to find suitable raw EEG data of schizophrenia patients for our purposes
     - at the moment, three possible sources are:
       - https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
       - http://brain.bio.msu.ru/eeg_schizophrenia.htm
