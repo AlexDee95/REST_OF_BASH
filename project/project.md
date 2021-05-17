@@ -3,6 +3,7 @@
 Please provide a general project outline and management plan.
 
 * What are the planned steps of the project, including a rough timeline?
+  * search for raw EEG data of schizophrenia patients which is useable for our purposes
   * literature search and hypotheses making
   * preregistration
   * data analysis:
@@ -10,14 +11,15 @@ Please provide a general project outline and management plan.
     * analysis
     * statistics 
   * results
-  * discuss results with actual literature
+  * discuss results with recent literature
 
 * What software will be utilized for the different project steps?
   * literature search: 
     * openknowledgemaps
-    * pudmed
+    * pubmed
     * web of science
     * Zotero
+    * Google Scholar
   * preregistration: osf.io
   * data analysis: 
     * descriptives: jamovi
@@ -26,7 +28,7 @@ Please provide a general project outline and management plan.
   * results:
 
 * What computing environment will be utilized for the different project steps?
-  * our Laptop with the different programms noticed above 
+  * our Laptops with the different programms noticed above 
 
 * How will the steps be documented and version controlled?
   * steps will be documented on GitHub and on GitKraken
