@@ -1,7 +1,5 @@
 # Project outline & management plan
 
-Please provide a general project outline and management plan.
-
 * What are the planned steps of the project, including a rough timeline?
   * search for raw EEG data of schizophrenia patients which is useable for our purposes
   * literature search and hypotheses making
