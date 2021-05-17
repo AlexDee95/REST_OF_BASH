@@ -36,7 +36,7 @@ Please provide information concerning the dataset you utilized, as well as it's 
 * How will the data be archived, exchanged and published?
 
 * Who is responsible for the data and what are the duties associated with it?
-  * we'll put here, when we know with which data set we'll actually work 
+  * we'll put it here, when we know with which data set we'll actually work 
 
 * What costs and resources are associated with the project?
   * no costs nor additional resources foreseeable at this point
