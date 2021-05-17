@@ -2,12 +2,12 @@
 
 ## GitHub and GitKraken:
 
-    created github repository "LASERPIN"
-        updated README.md file
-        updated project.md
-        updated labnotebook
-        updated data*.md
-        created a timeline on GitKraken
+    - created github repository "LASERPIN"
+      - updated README.md file
+      - updated project.md
+      - updated data*.md
+      - updated labnotebook
+      - created a timeline on GitKraken
 
 ## Search for raw EEG data:
 
