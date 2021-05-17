@@ -1,7 +1,5 @@
 # Data access
 
-Please provide information on how the data can be accessed.
-
   Data probably can be accessed through one of the following links:
 
     - https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
