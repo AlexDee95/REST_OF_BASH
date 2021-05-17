@@ -18,3 +18,6 @@
 #### - https://melbourne.figshare.com/articles/dataset/Data_Monash_Study/12752399?file=24131678
 ### - probably we found the paper to the last of these three data sets:
 #### - https://research.monash.edu/en/publications/aberrant-connectivity-in-auditory-precision-encoding-in-schizophr
+
+# week 2 (17.5. - 24.5.)
+
