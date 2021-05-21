@@ -21,3 +21,11 @@
 
 # week 2 (17.5. - 24.5.)
 
+## Docker:
+
+### - try to fix Docker and to get familiar with on my system (v)
+
+## Literature and data:
+
+### - try to find well suiting articles about our topic and to contact the responsible researchers to get raw data from them
+
