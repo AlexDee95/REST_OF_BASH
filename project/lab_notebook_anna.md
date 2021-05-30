@@ -22,5 +22,9 @@ literature search:
 # week 3 (17.05. -23.05.)
 * writing again an email to Ilvana -> Ilvana told me, that she is in contact to the IT to solve the downloading problem
 * writing an e-mail to Daniel Hermens -> „BMRI Electroencephalography (EEG) clinical research data“ from the University of Sydney -> still waiting for an answer
+* trying out commands on docker and conda
+
+# week 4 (24.05. -30.05.)
+* trying out commands on jupyter but actually it only works on binder 
 
 
