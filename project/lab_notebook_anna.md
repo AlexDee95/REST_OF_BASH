@@ -20,7 +20,7 @@ literature search:
   * Shupin Tan (https://www.frontiersin.org/articles/10.3389/fninf.2019.00004/full)
 
 # week 3 (17.05. -23.05.)
-* writing again an email to Ilvana -> Ilvana told me, that she is in contact to the IT to solve the downloading problem
+* writing again an email to Ilvana -> Ilvana told me, that she is in contact with the IT to solve the downloading problem
 * writing an e-mail to Daniel Hermens -> „BMRI Electroencephalography (EEG) clinical research data“ from the University of Sydney -> still waiting for an answer
 * trying out commands on docker and conda
 
