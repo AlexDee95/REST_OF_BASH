@@ -11,5 +11,16 @@ literature search:
   * updated labnotebook
   * updated data*.md
   * created a timeline on GitKraken
+* search for raw EEG data
+  * https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
+  * http://brain.bio.msu.ru/eeg_schizophrenia.htm
+  * https://melbourne.figshare.com/articles/dataset/Data_Monash_Study/12752399?file=24131678
+* writing mails to different people to ask for their EEG data
+  * Melissa Larsen and Ilvana Dzafic for the raw data of the Monash Study 
+  * Shupin Tan (https://www.frontiersin.org/articles/10.3389/fninf.2019.00004/full)
+
+# week 3 (17.05. -23.05.)
+* writing again an email to Ilvana -> Ilvana told me, that she is in contact to the IT to solve the downloading problem
+* writing an e-mail to Daniel Hermens -> „BMRI Electroencephalography (EEG) clinical research data“ from the University of Sydney -> still waiting for an answer
 
 
