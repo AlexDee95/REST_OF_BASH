@@ -29,12 +29,26 @@
 
 ### - try to find well suiting articles about our topic and to contact the responsible researchers to get raw data from them
 
-# week 3 (24.5. - 1.6.)
+# week 3 (24.5. - 31.5.)
 
 ## Jupyter Notebook:
 
 ### - got familiar with Jupyter Notebook
-### - 
+### - checked how to open standard .ipynb files in my JN
 ### - checked how to create a new file with Python Code
 
+# week 4 (31.5. - 7.6.)
 
+## New messages regarding data:
+
+### - the first of June I received a message from Elzbieta Olejarczyk from Poland
+### - she said that their data is in .edf format which might be useful for us
+### - this data set includes eeg signals from 14 patients with paranoid schizophrenia and 14 healthy controls
+#### - this is the article which probably belongs to this eeg measurement: https://discord.com/channels/@me/812092575733121094/849677353633447948
+
+## Practice with Jupyter Notebook and Python:
+
+### - programmed a calculator with Python code in my jupyter notebook in cooperation with Anna
+### - uploaded it here in our repo under the file name Calc.ipynb
+
+# week 5 (7.6. - 14.6.)
