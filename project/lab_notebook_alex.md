@@ -44,7 +44,8 @@
 ### - the first of June I received a message from Elzbieta Olejarczyk from Poland
 ### - she said that their data is in .edf format which might be useful for us
 ### - this data set includes eeg signals from 14 patients with paranoid schizophrenia and 14 healthy controls
-####  - this is the article which probably belongs to this eeg measurement: https://discord.com/channels/@me/812092575733121094/849677353633447948
+### - this is the article which probably belongs to this eeg measurement:
+#### - https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0188629
 
 ## Practice with Jupyter Notebook and Python:
 
