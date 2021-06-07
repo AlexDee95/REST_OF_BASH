@@ -27,4 +27,14 @@ literature search:
 # week 4 (24.05. -30.05.)
 * trying out commands on jupyter but actually it only works on binder 
 
+# week 5 (31.05. -06.06.)
+* talk with Alex about the answer from Elzbieta Olejarczyk
+* have a look on the paper and the eeg data from the study: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0188629
+
+* now my jupyter notebook works with my PC and my command system
+
+* programmed a calculator with Python code in Alex' jupyter notebook in cooperation with Alex
+
+# week 6 (07.06. -13.06.)
+
 
