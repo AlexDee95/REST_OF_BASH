@@ -23,9 +23,18 @@
 
 ## Docker:
 
-### - try to fix Docker and to get familiar with on my system (v)
+### - try to fix Docker and to get familiar with on my system
 
 ## Literature and data:
 
 ### - try to find well suiting articles about our topic and to contact the responsible researchers to get raw data from them
+
+# week 3 (24.5. - 1.6.)
+
+## Jupyter Notebook:
+
+### - got familiar with Jupyter Notebook
+### - 
+### - checked how to create a new file with Python Code
+
 
