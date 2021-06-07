@@ -49,7 +49,7 @@
 
 ## Practice with Jupyter Notebook and Python:
 
-### - programmed a calculator with Python code in my jupyter notebook in cooperation with Anna
+### - programmed a calculator with Python code in my jupyter notebook in collaboration with Anna
 ### - uploaded it here in our repo under the file name Calc.ipynb
 
 # week 5 (7.6. - 14.6.)
