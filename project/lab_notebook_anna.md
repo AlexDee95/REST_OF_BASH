@@ -34,7 +34,11 @@ literature search:
 * now my jupyter notebook works with my PC and my command system
 
 * programmed a calculator with Python code in Alex' jupyter notebook in cooperation with Alex
+* after that I programmed my own calculator
 
 # week 6 (07.06. -13.06.)
+* downloaded the EEG data files from https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
+* updated data*.md
+* read the related publication to the EEG data files: Olejarczyk E, Jernajczyk W (2017) Graphbased analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629. https://doi.org/10.1371/journal.pone.0188629
 
 
