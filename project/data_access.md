@@ -1,14 +1,17 @@
 # Data access
++ data consists of 28 files, 261 MB
++ 28 subjects (14 HC, 14 patients with schizophrenia)
++ format: edf
++ modalities: eeg channels
 
-  Data probably can be accessed through one of the following links:
-
-    - https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
-
-    - http://brain.bio.msu.ru/eeg_schizophrenia.htm
-
-    - https://melbourne.figshare.com/articles/dataset/Data_Monash_Study/12752399?file=24131678
-
-  Which of these is available as raw data we still have to find out. Depending on that we'll work with one or another data set. 
+- we will analyse the data with MNE-Python
+- they are raw data
+- the data is from the dataset https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
+- License: CC0 Creative Commons Zero 1.0 
+- Authors: Olejarczyk E, Jernajczyk W
+- we downloaded 28 files in edf format
+- Dataset DOI: doi:10.18150/repod.0107441
+- fundings: no specific funding for this work
 
 * Raw data
 
