@@ -40,7 +40,7 @@ Please provide information concerning the dataset you utilized, as well as it's 
 Psychiatry and Neurology in Warsaw
 
 * How will the data be archived, exchanged and published?
-  * Olejarczyk E, Jernajczyk W (2017) Graphbased analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629. https://doi.org/10.1371/journal.pone.0188629
+  * Olejarczyk E, Jernajczyk W (2017) Graph-based analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629.https://doi.org/10.1371/journal.pone.0188629
   * Dataset: Olejarczyk, E.; Jernajczyk, W. (2017) EEG in schizophrenia. RepOD. http://dx.doi.org/10.18150/repod.0107441.
   * free to download at RepOD
 
