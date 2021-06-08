@@ -17,7 +17,7 @@ Please provide information concerning the dataset you utilized, as well as it's 
     * schizophrenia AND eeg AND language (not very useful) 
 
 * How was the dataset obtained?
-  * downloading (not yet)
+  * downloading the raw data from RepOD (repository for open data)
   * still looking for raw EEG data
   * source could be one of the following links:
     - https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
@@ -25,18 +25,30 @@ Please provide information concerning the dataset you utilized, as well as it's 
     - https://melbourne.figshare.com/articles/dataset/Data_Monash_Study/12752399?file=24131678
 
 * What kind of data was utilized within the project?
-  * (raw) data from EEG (how many data points is still unclear)
+  * dataset of EEG recordings
+  * focus on all oscillations for 14 healthy controls and 14 patients with schizophrenia
 
 * What kind of data was generated within the project?
-
+  * raw data from EEG based on 10-20 system (19 EEG channels), oscillations (alpha, beta, delta, theta, gamma)
+  
 * How was the data organized?
+  * main dirctory contains 14 files of the healthy controls (HC - h01.edf) and 14 files of the patients with schizophrenia (s01.edf) in .edf format 
 
 * What are the administrative and legal aspects of the data?
+  * license: CC0 Creative Commons Zero 1.0 
+  * ethics approvals: Ethics Committee of the Institute of
+Psychiatry and Neurology in Warsaw
 
 * How will the data be archived, exchanged and published?
+  * Olejarczyk E, Jernajczyk W (2017) Graphbased analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629. https://doi.org/10.1371/journal.pone.0188629
+  * Dataset: Olejarczyk, E.; Jernajczyk, W. (2017) EEG in schizophrenia. RepOD. http://dx.doi.org/10.18150/repod.0107441.
+  * free to download at RepOD
 
 * Who is responsible for the data and what are the duties associated with it?
-  * we'll put it here, when we know with which data set we'll actually work 
+  * authors: Elzbieta Olejarczyk, Wojciech Jernajczyk
+  * support: for questions please contact Olejarczyk, Elzbieta
+  * upload on RepOD by Elzbieta Olejarczyk on 2017-09-01
 
 * What costs and resources are associated with the project?
-  * no costs nor additional resources foreseeable at this point
+  * funding:  The authors received no specific funding
+for this work.
