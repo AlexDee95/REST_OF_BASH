@@ -13,9 +13,9 @@
 - Dataset DOI: doi:10.18150/repod.0107441
 - fundings: no specific funding for this work
 
-* Raw data
+# Raw data
 
-    - t. b. c.
+- the .edf files mentioned above should be raw data
 
 * Data derivatives 
     - t. b. c.
