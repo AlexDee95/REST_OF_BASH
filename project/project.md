@@ -21,8 +21,8 @@
   * preregistration: osf.io
   * data analysis: 
     * descriptives: jamovi
-    * interference statistics:
-    * eeg:
+    * interference statistics: panda (python based)
+    * eeg: MNE (python based)
   * results:
 
 * What computing environment will be utilized for the different project steps?
