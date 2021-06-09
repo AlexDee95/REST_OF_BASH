@@ -1,7 +1,5 @@
 # Data analyses
 
-Provide readers/users with a general outline of the conducted analyses and corresponding outcomes.
-
 - the data we will analyse was downloaded from https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
 - we want to use MNE-Python for the analysis
 - we want to look at the data of all subjects to identify 'bad channels' and artifacts in the signals
