@@ -41,4 +41,13 @@ literature search:
 * updated data*.md
 * read the related publication to the EEG data files: Olejarczyk E, Jernajczyk W (2017) Graph-based analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629. https://doi.org/10.1371/journal.pone.0188629
 
+# week 7 (14.06. -20.06.)
+* updating github repository
+* meeting with José to talk about the first steps of preprocessing
+* creating a jupyter notebook for preprocessing
+
+# week 8 (21.06. -27.06.)
+* meeting with José to solve problems with the preprocessing
+* completion of the preprocessing for one subject
+* creation of a loop on the jupyter notebook to preprocess all subjects
 
