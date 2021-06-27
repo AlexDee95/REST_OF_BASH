@@ -51,3 +51,5 @@ literature search:
 * completion of the preprocessing for one subject
 * creation of a loop on the jupyter notebook to preprocess all subjects
 
+# week 9 (28.06. -04.07.)
+*
