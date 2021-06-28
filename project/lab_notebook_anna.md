@@ -55,3 +55,4 @@ literature search:
 * meeting with José 
 * completion of preprocessing with a reference electrode for all subjects
 * control the ICA for all subjects
+* update "_toc.yml" on github 
