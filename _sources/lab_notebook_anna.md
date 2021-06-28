@@ -52,4 +52,6 @@ literature search:
 * creation of a loop on the jupyter notebook to preprocess all subjects
 
 # week 9 (28.06. -04.07.)
-*
+* meeting with José 
+* completion of preprocessing with a reference electrode for all subjects
+* control the ICA for all subjects
