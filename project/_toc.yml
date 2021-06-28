@@ -1,4 +1,6 @@
-- file: index
+root: index
+format: jb-book
+chapters:
 - file: overview
 - file: project
 - file: data
