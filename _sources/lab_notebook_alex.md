@@ -72,7 +72,7 @@
 
 ## ICA/ complete Preprocessing (with José):
 
-### - loaded data into our jupyter notebook and creating a for-loop to preprocess all data
+### - loaded data into our jupyter notebook and created a for-loop to preprocess all data
 ### - decided to take Fp1 and Fp2 of s01 as examples for eye artifacts and to use it for filtering these out for every other person
 ### - applied ICA (fastica) for all persons but it didn't work out well for each of them:
 #### - was faulty for s02, s06, s07, s11, s12, s14, h06, h07, h10, h11 and h14
