@@ -53,3 +53,35 @@
 ### - uploaded it here in our repo under the file name Calc.ipynb
 
 # week 5 (7.6. - 14.6.)
+
+## MNE and reading EEG data:
+
+### - got familiar with the program MNE as integrated tool for EEG data (.edf files) in Jupyter Notebook
+### - did first programing steps with MNE to have a first closer sight on our 28 .edf files (14 with Schizophrenia, 14 healthy ones/ s01-s14; h01-h14)
+### - data includes a resting measurement for every person with closed eyes (about 15 mins) with 19 eeg channels/ data points
+
+# week 6 (14.6. - 21.6.)
+
+## Filtering data/ single Preprocessing (with José):
+
+### - created a bandpass filter with lowest frequency at 0.5 hz and highest frequency at 45.0 hz
+### - created eog and ecg epochs to define interfering components in the eeg signal
+### - tried to create first steps for the independent component analysis (ICA)
+
+# week 7 (21.6. - 28.6.)
+
+## ICA/ complete Preprocessing (with José):
+
+### - loaded data into our jupyter notebook and creating a for-loop to preprocess all data
+### - decided to take Fp1 and Fp2 of s01 as examples for eye artifacts and to use it for filtering these out for every other person
+### - applied ICA (fastica) for all persons but it didn't work out well for each of them:
+#### - was faulty for s02, s06, s07, s11, s12, s14, h06, h07, h10, h11 and h14
+
+# week 8 (28.6. - 5.7.)
+
+## refining ICA (with José):
+
+### - decided to refine the first ICA of the data and to create an own template for filtering out eye artifacts
+### - worked out better with this refined version of the ica, data looked even better; some rare single channels with conspicuously bad signal had to be taken out manually
+### - persons with still a problematic components which couldn't filtered out:
+#### - s06, s09, h04, h11, h12
