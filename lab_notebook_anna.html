@@ -264,6 +264,11 @@
    week 9 (28.06. -04.07.)
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#week-10-05-07-11-07">
+   week 10 (05.07. -11.07.)
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -341,14 +346,17 @@
 <li><p>downloaded the EEG data files from <a class="reference external" href="https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441">https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441</a></p></li>
 <li><p>updated data*.md</p></li>
 <li><p>read the related publication to the EEG data files: Olejarczyk E, Jernajczyk W (2017) Graph-based analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629. <a class="reference external" href="https://doi.org/10.1371/journal.pone.0188629">https://doi.org/10.1371/journal.pone.0188629</a></p></li>
+<li><p>meeting with José to talk about the first steps of preprocessing</p></li>
+<li><p>creating a jupyter notebook for preprocessing -&gt; first steps on preprocessing to get a first look on the data (28 .edf files)</p></li>
+<li><p>get to know MNE as a tool for EEG data</p></li>
 </ul>
 </div>
 <div class="section" id="week-7-14-06-20-06">
 <h1>week 7 (14.06. -20.06.)<a class="headerlink" href="#week-7-14-06-20-06" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>updating github repository</p></li>
-<li><p>meeting with José to talk about the first steps of preprocessing</p></li>
-<li><p>creating a jupyter notebook for preprocessing</p></li>
+<li><p>creating eog and ecg epochs to evaluate interfering components in the eeg signal</p></li>
+<li><p>first steps for the ICA (independent component analysis)</p></li>
 </ul>
 </div>
 <div class="section" id="week-8-21-06-27-06">
@@ -356,16 +364,33 @@
 <ul class="simple">
 <li><p>meeting with José to solve problems with the preprocessing</p></li>
 <li><p>completion of the preprocessing for one subject</p></li>
-<li><p>creation of a loop on the jupyter notebook to preprocess all subjects</p></li>
+<li><p>creation of a loop on the jupyter notebook to preprocess all subjects</p>
+<ul>
+<li><p>take Fp1 and Fp2 as reference for eye artifacts</p></li>
+<li><p>ICA did not work for every subject: s02, s06, s07, s11, s12, h06, h07, h10, h11, h14</p></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="week-9-28-06-04-07">
 <h1>week 9 (28.06. -04.07.)<a class="headerlink" href="#week-9-28-06-04-07" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>meeting with José</p></li>
-<li><p>completion of preprocessing with a reference electrode for all subjects</p></li>
-<li><p>control the ICA for all subjects</p></li>
 <li><p>update “_toc.yml” on github</p></li>
+<li><p>meeting with José</p></li>
+<li><p>completion of preprocessing by creating an own template for filtering eye artifacts in the eeg signal</p></li>
+<li><p>control the ICA for all subjects</p>
+<ul>
+<li><p>it worked better than our first ICA</p></li>
+<li><p>some artifacts could not be filtered: s06, s09, h04, h11</p></li>
+<li><p>in one subject it could not be detected a component: s12</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="week-10-05-07-11-07">
+<h1>week 10 (05.07. -11.07.)<a class="headerlink" href="#week-10-05-07-11-07" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li></li>
 </ul>
 </div>
 
