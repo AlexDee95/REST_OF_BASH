@@ -40,19 +40,31 @@ literature search:
 * downloaded the EEG data files from https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
 * updated data*.md
 * read the related publication to the EEG data files: Olejarczyk E, Jernajczyk W (2017) Graph-based analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629. https://doi.org/10.1371/journal.pone.0188629
+* meeting with José to talk about the first steps of preprocessing
+* creating a jupyter notebook for preprocessing -> first steps on preprocessing to get a first look on the data (28 .edf files)
+* get to know MNE as a tool for EEG data
 
 # week 7 (14.06. -20.06.)
 * updating github repository
-* meeting with José to talk about the first steps of preprocessing
-* creating a jupyter notebook for preprocessing
+* creating eog and ecg epochs to evaluate interfering components in the eeg signal 
+* first steps for the ICA (independent component analysis)
 
 # week 8 (21.06. -27.06.)
 * meeting with José to solve problems with the preprocessing
 * completion of the preprocessing for one subject
 * creation of a loop on the jupyter notebook to preprocess all subjects
+  * take Fp1 and Fp2 as reference for eye artifacts
+  * ICA did not work for every subject: s02, s06, s07, s11, s12, h06, h07, h10, h11, h14 
 
 # week 9 (28.06. -04.07.)
-* meeting with José 
-* completion of preprocessing with a reference electrode for all subjects
-* control the ICA for all subjects
 * update "_toc.yml" on github 
+* meeting with José 
+* completion of preprocessing by creating an own template for filtering eye artifacts in the eeg signal
+* control the ICA for all subjects
+  * it worked better than our first ICA
+  * some artifacts could not be filtered: s06, s09, h04, h11
+  * in one subject it could not be detected a component: s12
+
+# week 10 (05.07. -11.07.)
+* 
+
