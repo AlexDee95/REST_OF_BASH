@@ -66,5 +66,11 @@ literature search:
   * in one subject it could not be detected a component: s12
 
 # week 10 (05.07. -11.07.)
-* 
+* we decide to make a frequency band analysis for our eeg data because of the missing of stimulus events
+* doing the epochs analysis for all subject and plotting the results 
+  * adaptation of the scales for the different frequencies
+* averaging the data separately for the frequencies (delta, theta, alpha, beta and gamma)
+
+# week 11 (12.07. -18.07.)
+*
 
