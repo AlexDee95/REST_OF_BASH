@@ -72,5 +72,23 @@ literature search:
 * averaging the data separately for the frequencies (delta, theta, alpha, beta and gamma)
 
 # week 11 (12.07. -18.07.)
-*
+* plotting the averages for all frequencies and the two groups and making a short presentation about the results
+* discuss the results with Alex 
+* looking for prospective statistic analysis 
+* literature research because of the new aim of our project:
+  * frequency-band analysis
+  * frequency processing in schizophrenia
+
+# week 12 (19.07. -25.07.)
+* read some paper about the activity of the different frequencies in schizophrenia compared to healthy controls
+  * Bates et al. (2009)
+  * Mulert et al. (2010)
+  * Light et al. (2006)
+  * Moran et al. (2011)
+  * Lisman (2012)
+  * Basar-Eroglu et al. (2007)
+  * Kirihara et al. (2012)
+  * Hanslamyr et al. (2013)
+  * Uhlhaas & Singer (2010)
+*  
 
