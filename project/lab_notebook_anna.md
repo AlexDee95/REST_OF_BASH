@@ -78,6 +78,7 @@ literature search:
 * literature research because of the new aim of our project:
   * frequency-band analysis
   * frequency processing in schizophrenia
+* creation of "code"-folder on github
 
 # week 12 (19.07. -25.07.)
 * read some paper about the activity of the different frequencies in schizophrenia compared to healthy controls
