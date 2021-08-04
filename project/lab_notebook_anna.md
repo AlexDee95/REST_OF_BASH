@@ -91,5 +91,11 @@ literature search:
   * Kirihara et al. (2012)
   * Hanslamyr et al. (2013)
   * Uhlhaas & Singer (2010)
-*  
+
+# week 13 (26.07. -01.08.)
+* on holiday
+
+# week 14 (01.08. -08.08.)
+* creation and designing of the poster for the symposium
+* 
 
