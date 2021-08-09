@@ -1,7 +1,7 @@
 
 ```{toctree}
 ---
-hidden: true
+hidden: false
 includehidden: true
 titlesonly: true
 ---
