@@ -6,14 +6,17 @@ includehidden: true
 titlesonly: true
 ---
 ```
-**Add a logo graphic for your project here.**
+
+![grafik](https://user-images.githubusercontent.com/83219542/128745122-fd0197aa-0324-4790-ba93-8922a0f5dbdb.png)
+
 
 ```{admonition} About the content of this Jupyter Book
 :class: warning
 This page is currently under construction and will be updated continiously.
 Pleae visit this page again in the next feew weeks for further information.
 ```
-**Add your zenodo badge here.***
+
+REST_OF_BASH is on osf: https://osf.io/b2hzm
 
 # Welcome!
 
