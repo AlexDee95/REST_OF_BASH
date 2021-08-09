@@ -31,4 +31,5 @@ Code of Conduct
 
 # I've got a question!
 Feel free to ask and contact us! We are open to any feedback and suggestions.
-Contact as on the Github website of REST_OF_BASH project.
+
+Contact as on the Github website of REST_OF_BASH project or via mail (dolge@students.uni-marburg.de, strinzel@students.uni-marburg.de)
