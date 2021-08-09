@@ -15,7 +15,7 @@
 
 # Raw data
 
-- the .edf files mentioned above should be raw data
+- those .edf files mentioned above
 
 * Data derivatives 
-    - t. b. c.
+    - preprocessed .fif files after ICA
