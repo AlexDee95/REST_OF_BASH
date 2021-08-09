@@ -1,7 +1,5 @@
 # Dataset & management plan
 
-Please provide information concerning the dataset you utilized, as well as it's management plan.
-
 * How was the dataset search conducted?
   * search on different websites:
     * https://datasetsearch.research.google.com/
@@ -18,11 +16,8 @@ Please provide information concerning the dataset you utilized, as well as it's 
 
 * How was the dataset obtained?
   * downloading the raw data from RepOD (repository for open data)
-  * still looking for raw EEG data
-  * source could be one of the following links:
+  * link to the source:
     - https://repod.icm.edu.pl/dataset.xhtml?persistentId=doi:10.18150/repod.0107441
-    - http://brain.bio.msu.ru/eeg_schizophrenia.htm
-    - https://melbourne.figshare.com/articles/dataset/Data_Monash_Study/12752399?file=24131678
 
 * What kind of data was utilized within the project?
   * dataset of EEG recordings
@@ -37,7 +32,7 @@ Please provide information concerning the dataset you utilized, as well as it's 
 * What are the administrative and legal aspects of the data?
   * license: CC0 Creative Commons Zero 1.0 
   * ethics approvals: Ethics Committee of the Institute of
-Psychiatry and Neurology in Warsaw
+    Psychiatry and Neurology in Warsaw
 
 * How will the data be archived, exchanged and published?
   * Olejarczyk E, Jernajczyk W (2017) Graph-based analysis of brain connectivity in schizophrenia. PLoS ONE 12(11): e0188629.https://doi.org/10.1371/journal.pone.0188629
@@ -50,5 +45,5 @@ Psychiatry and Neurology in Warsaw
   * upload on RepOD by Elzbieta Olejarczyk on 2017-09-01
 
 * What costs and resources are associated with the project?
-  * funding:  The authors received no specific funding
-for this work.
+  * funding: The authors received no specific funding
+    for this work.
