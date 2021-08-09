@@ -28,3 +28,7 @@ Poster & manuscript
 Data access
 
 Code of Conduct
+
+# I've got a question!
+Feel free to ask and contact us! We are open to any feedback and suggestions.
+Contact as on the Github website of REST_OF_BASH project.
