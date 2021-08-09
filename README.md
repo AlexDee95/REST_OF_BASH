@@ -1,12 +1,4 @@
-**Add project logo here**
 ![LOGO_MNW](https://user-images.githubusercontent.com/83163446/126873837-fecca2cc-692f-490a-8785-0fd21ae55048.jpeg)
-
-
-**Add project zenodo badge here**
-
-
-
-## "What's in this repository?"
 
 This repository contains the jupyter book for the project *REST_OF_BASH* conducted within **"Methodological Working in the Neurosciences" (2021)**.
 
