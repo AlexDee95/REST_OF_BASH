@@ -1,11 +1,10 @@
 # Poster & manuscript
 
-Please provide information on how the poster and manuscript were prepared, as well
-as respective links to final versions.
-
 ### Scientific poster
+
+[Poster_REST_OF_BASH_02.pdf](https://github.com/AlexDee95/REST_OF_BASH/files/6955678/Poster_REST_OF_BASH_02.pdf)
 
 ### Scientific talk 
 
-### Scientific preprint
+
 
