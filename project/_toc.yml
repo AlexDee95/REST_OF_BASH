@@ -6,7 +6,14 @@ chapters:
 - file: data
 - file: pre_registration
 - file: lab_notebook
+  sections:
+  - file: lab_notebook_alex
+  - file: lab_notebook_anna
 - file: data_analyses
+  sections:
+  - file: Preprocessing_with_comments_without_graphics
+  - file: Preprocessing_and_ICA_all_subjects_with_comments
+  - file: Epochs_and_bands_with_comments_without_graphics
 - file: results
 - file: poster_manuscript
 - file: data_access
