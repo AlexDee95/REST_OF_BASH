@@ -22,9 +22,9 @@ In this example, we concluded that component #000 and #002 might be such artifac
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128736569-e46067eb-2710-4e97-b840-f2ff2681f567.png)
 
-These are the average acitivities of the different frequency bands of schizophrenic patients and healthy controls.
+### 2.2 Average delta activity and critical electrodes
 
-### 2.1 Average delta activity and critical electrodes
+For delta activity (1-4 Hz; vmin: 0.03, vmax: 0.07) in schizophrenic patients we observe a reduced frontotemporal activity compared to healthy controls. Here, the three electrodes of interest are F8, F7 and Cz whereby F8 shows the highest difference. Yet, the differences for Cz as well as for F7 and F8 are not significant after independent t-test. However, for F8 the test value tends to significance (p = 0.054).
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128730869-f80b7611-752b-4359-aeab-5d8ecc4d5a7e.png)
 
@@ -32,7 +32,9 @@ These are the average acitivities of the different frequency bands of schizophre
    - F8: test_indResult(statistic=2.015, pvalue=0.054)
    - F7 and Cz were not approximately significant
 
-### 2.2 Average theta activity and critical electrodes
+### 2.3 Average theta activity and critical electrodes
+
+For theta activity (4-9 Hz; vmin: 0.02, vmax: 0.03) in schizophrenic patients we observe a reduced central activity compared to healthy controls. Here, the two electrodes of interest are Fz and Cz whereby Cz shows a slightly greater difference. After independent t-test, the Cz difference doesn't show any signficance (p = 0.342).
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128731826-4901ba0f-aa02-430b-9552-131e51ec6ce7.png)
 
@@ -40,19 +42,25 @@ These are the average acitivities of the different frequency bands of schizophre
    - Fz was not approximately significant
    - Cz: Ttest_indResult(statistic=0.968, pvalue=0.342)
 
-### 2.3 Average alpha activity
+### 2.4 Average alpha activity
+
+For alpha activity (9-12 Hz; vmin: 0.03, vmax: 0.07) in schizophrenic patients we observe a slightly stronger and more distributed activity overall compared to healthy controls. Yet here, the differences for all electrodes are too small for any significance. Generally spoken, alpha activity is more present in the occipital lobe.
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128732054-8d7a5181-eadf-4505-b485-37c377930fd4.png)
    - none of the electrode differences was approximately significant
 
-### 2.4 Average beta activity and critical electrode
+### 2.5 Average beta activity and critical electrode
+
+For beta activity (12-30 Hz; vmin: 0.006, vmax: 0.009) in schizophrenic patients we observe a reduced tempoparietal activity compared to healthy controls. Here, the only electrode of interest is T5. However, the difference for T5 is not significant after independent t-test (p = 0.554).
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128732252-61fd9537-a678-4f46-8144-53805e8f983b.png)
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128732305-8f24b93b-e6ea-4183-91a4-2e0613e911ad.png)
    - T5: Ttest_indResult(statistic=0.601, pvalue=0.554)
 
-### 2.5 Average gamma activity and critical electrodes
+### 2.6 Average gamma activity and critical electrodes
+
+For gamma activity (30-45 Hz; vmin: 0.001, vmax: 0.005) in schizophrenic patients we observe an increased temporal activity compared to healthy controls. Here, the two electrodes of interest are T4 and T3. After independent t-test, both of the electrodes show no significance (T4: p = 0.075; T3: p = 0.085) but have a trend to.
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128732639-3e6aaada-a5bf-401e-aa78-5e8ae1f7971c.png)
 
