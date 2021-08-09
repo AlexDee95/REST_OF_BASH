@@ -12,5 +12,6 @@
 
 ## Outcomes
 
-Provide information concerning the outcomes of the different analysis parts, as well as links to further
-details on data access.
+- Preprocessing
+- ICA
+- Frequency-Band Analysis
