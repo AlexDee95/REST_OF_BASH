@@ -6,8 +6,9 @@
   * preregistration
   * data analysis:
     * preprocessing
-    * analysis
-    * statistics 
+    * ICA
+    * frequency-band analysis
+    * statistics
   * results
   * discuss results with recent literature
 
@@ -19,8 +20,7 @@
     * Zotero
     * Google Scholar
   * preregistration: osf.io
-  * data analysis: 
-    * descriptives: jamovi
+  * data analysis:
     * interference statistics: panda (python based)
     * eeg: MNE (python based)
   * results:
