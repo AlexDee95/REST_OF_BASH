@@ -21,10 +21,11 @@
     * Google Scholar
   * preregistration: osf.io
   * data analysis:
-    * interference statistics: panda (python based)
-    * eeg: MNE (python based)
+    * interference statistics: panda 1.3.1 (python based)
+    * eeg: MNE 0.23.0 (python based)
   * results:
-
+    * Libre Office Impress 7.0
+    * Microsoft PowerPoint 2016 
 * What computing environment will be utilized for the different project steps?
   * our Laptops with the different programms noticed above 
 
