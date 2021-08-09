@@ -11,7 +11,14 @@
 
 ## 2 Results & Outcomes
 
-Here you can see one example of an ICA result of schizophrenic patient #1:
+Here we present you our results of Preprocessing, ICA and frequency-band analysis.
+
+### 2.1 Preprocessing and ICA
+
+For Preprocessing we used a bandpass filter with 0,5 and 45 Hz.
+For the ICA we used seven components to identify and exclude eye movement artifacts.
+Here, you can see one example of an ICA result of schizophrenic patient #1.
+In this example, we concluded that component #000 and #002 might be such artifacts of interest but because of the more central distribution of the activity in #000 which makes it more unclear we excluded only #002.
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128736569-e46067eb-2710-4e97-b840-f2ff2681f567.png)
 
