@@ -11,7 +11,13 @@
 
 ## 2 Results & Outcomes
 
+Here you can see one example of an ICA result of schizophrenic patient #1:
+
+![grafik](https://user-images.githubusercontent.com/83219542/128736316-3a6ba8b5-0faf-4e91-ba67-bed3c3e8d164.png)
+
 These are the average acitivities of the different frequency bands of schizophrenic patients and healthy controls.
+
+![grafik](https://user-images.githubusercontent.com/83219542/128736051-788e8f3b-d8fa-42cd-bc26-dae48aaa0e0b.png)
 
 ### 2.1 Average delta activity and critical electrodes
 
