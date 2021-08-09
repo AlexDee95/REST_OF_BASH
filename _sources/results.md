@@ -18,7 +18,7 @@ These are the average acitivities of the different frequency bands of schizophre
 ![grafik](https://user-images.githubusercontent.com/83219542/128730869-f80b7611-752b-4359-aeab-5d8ecc4d5a7e.png)
 
 ![grafik](https://user-images.githubusercontent.com/83219542/128731576-b18a074d-7abd-47fd-ac2e-e306a52af4ba.png)
-F8: test_indResult(statistic=2.014769507827961, pvalue=0.05448583575057455)
+   - F8: test_indResult(statistic=2.014769507827961, pvalue=0.05448583575057455)
 
 ### 2.2 Average theta activity and critical electrodes
 
