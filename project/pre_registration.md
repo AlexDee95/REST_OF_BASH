@@ -1,4 +1,4 @@
-# Open lab notebook
+# Preregistration REST_OF_BASH
 
 ## First Registration
 * registered: 15.05.2021
