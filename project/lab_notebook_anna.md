@@ -96,6 +96,10 @@ literature search:
 * on holiday
 
 # week 14 (01.08. -08.08.)
-* creation and designing of the poster for the symposium
-* 
+* creation and designing the poster for the symposium
+
+# week 15 (09.08. -15.08.)
+* updating GitHub documents
+* creating website of our GitHub reposatory
+* symposium
 
