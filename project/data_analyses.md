@@ -12,6 +12,8 @@
 
 ## Outcomes
 
+A general overview about the analysis steps. For a closer look, please look at our codes.
+
 - Preprocessing
   - imported modules: 
     - numpy
