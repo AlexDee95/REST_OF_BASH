@@ -1,0 +1,852 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epochs and bands</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Results" href="results.html" />
+    <link rel="prev" title="Preprocessing_and_ICA_all_subject" href="Preprocessing_and_ICA_all_subjects_with_comments.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Overview &amp; motivation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project.html">
+   Project outline &amp; management plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data.html">
+   Dataset &amp; management plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pre_registration.html">
+   Open lab notebook
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="data_analyses.html">
+   Data analysis
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Preprocessing_with_comments_without_graphics.html">
+     Preprocessing of EEG data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Preprocessing_and_ICA_all_subjects_with_comments.html">
+     Preprocessing_and_ICA_all_subject
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Epochs and bands
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="results.html">
+   Results
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="poster_manuscript.html">
+   Poster &amp; manuscript
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_access.html">
+   Data access
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CoC.html">
+   GORELLA Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Epochs_and_bands_with_comments_without_graphics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/G0RELLA/gorella_project_template"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/G0RELLA/gorella_project_template/issues/new?title=Issue%20on%20page%20%2FEpochs_and_bands_with_comments_without_graphics.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/G0RELLA/gorella_project_template/edit/master/lecture/Epochs_and_bands_with_comments_without_graphics.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/G0RELLA/gorella_project_template/master?urlpath=tree/lecture/Epochs_and_bands_with_comments_without_graphics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="epochs-and-bands">
+<h1>Epochs and bands<a class="headerlink" href="#epochs-and-bands" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mne.io</span> <span class="kn">import</span> <span class="n">read_raw_fif</span>
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">Epochs</span>
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">make_fixed_length_epochs</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average delta activation for every person and define minimum/ maximum power frame</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span><span class="o">.</span><span class="n">plot_psd_topomap</span><span class="p">(</span><span class="n">bands</span><span class="o">=</span><span class="p">[(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Delta&quot;</span><span class="p">)],</span> <span class="n">ch_type</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dB</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vlim</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average theta activation for every person and define minimum/ maximum power frame</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span><span class="o">.</span><span class="n">plot_psd_topomap</span><span class="p">(</span><span class="n">bands</span><span class="o">=</span><span class="p">[(</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="s2">&quot;Theta&quot;</span><span class="p">)],</span> <span class="n">ch_type</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dB</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vlim</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average alpha activation for every person and define minimum/ maximum power frame</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span><span class="o">.</span><span class="n">plot_psd_topomap</span><span class="p">(</span><span class="n">bands</span><span class="o">=</span><span class="p">[(</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span> <span class="s2">&quot;Alpha&quot;</span><span class="p">)],</span> <span class="n">ch_type</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dB</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vlim</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average beta activation for every person and define minimum/ maximum power frame</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span><span class="o">.</span><span class="n">plot_psd_topomap</span><span class="p">(</span><span class="n">bands</span><span class="o">=</span><span class="p">[(</span><span class="mi">12</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;Beta&quot;</span><span class="p">)],</span> <span class="n">ch_type</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dB</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vlim</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average gamma activation for every person and define minimum/ maximum power frame</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span><span class="o">.</span><span class="n">plot_psd_topomap</span><span class="p">(</span><span class="n">bands</span><span class="o">=</span><span class="p">[(</span><span class="mi">30</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span> <span class="s2">&quot;Gamma&quot;</span><span class="p">)],</span> <span class="n">ch_type</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dB</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vlim</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load all filtered and preprocessed eeg/ .fif files for every person</span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h01-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h02-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h03-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h04-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h05-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h06-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h07-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h08-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h09-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h10-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h11-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h12-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h13-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h14-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s01-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s02-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s03-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s04-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s05-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s06-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s07-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s08-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s09-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s10-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s11-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s12-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s13-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s14-raw.fif&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define all files which count to &quot;healthy&quot;</span>
+<span class="n">healthy</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h01-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h02-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h03-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h04-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h05-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h06-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h07-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h08-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h09-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h10-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h11-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h12-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h13-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/h14-raw.fif&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define all files which count to &quot;schizophrenic&quot;</span>
+<span class="n">schizo</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s01-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s02-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s03-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s04-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s05-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s06-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s07-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s08-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s09-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s10-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s11-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s12-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s13-raw.fif&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s14-raw.fif&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">mne.io</span> <span class="kn">import</span> <span class="n">read_raw_fif</span>
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">Epochs</span>
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">make_fixed_length_epochs</span>
+<span class="kn">from</span> <span class="nn">mne.time_frequency</span> <span class="kn">import</span> <span class="n">psd_welch</span><span class="p">,</span> <span class="n">psd_multitaper</span>
+<span class="kn">from</span> <span class="nn">mne.viz</span> <span class="kn">import</span> <span class="n">plot_topomap</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sh_ave</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">14</span><span class="p">,</span><span class="mi">19</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">n_file</span><span class="p">,</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">schizo</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1">#epochs.plot_psd_topomap(ch_type=&quot;eeg&quot;, normalize=True);</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="n">epochs</span><span class="o">.</span><span class="n">info</span>
+    <span class="c1">#psd, freqs = psd_welch(epochs, fmin=1.0, fmax=45.0)</span>
+    <span class="n">psd</span><span class="p">,</span> <span class="n">freqs</span> <span class="o">=</span> <span class="n">psd_multitaper</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">fmin</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">fmax</span><span class="o">=</span><span class="mf">45.0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">psd</span> <span class="o">/=</span> <span class="n">psd</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1">#for example, here gamma activation</span>
+    <span class="n">s_ave</span> <span class="o">=</span> <span class="n">psd</span><span class="p">[:,:,(</span><span class="n">freqs</span><span class="o">&gt;</span><span class="mf">30.0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">freqs</span><span class="o">&lt;</span><span class="mf">45.0</span><span class="p">)]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">sh_ave</span><span class="p">[</span><span class="n">n_file</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">s_ave</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_ave</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">14</span><span class="p">,</span><span class="mi">19</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">n_file</span><span class="p">,</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">healthy</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1">#epochs.plot_psd_topomap(ch_type=&quot;eeg&quot;, normalize=True);</span>
+    <span class="n">info</span> <span class="o">=</span> <span class="n">epochs</span><span class="o">.</span><span class="n">info</span>
+    <span class="c1">#psd, freqs = psd_welch(epochs, fmin=1.0, fmax=45.0)</span>
+    <span class="n">psd</span><span class="p">,</span> <span class="n">freqs</span> <span class="o">=</span> <span class="n">psd_multitaper</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">fmin</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">fmax</span><span class="o">=</span><span class="mf">45.0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">psd</span> <span class="o">/=</span> <span class="n">psd</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1">#for example, here gamma activation</span>
+    <span class="n">s_ave</span> <span class="o">=</span> <span class="n">psd</span><span class="p">[:,:,(</span><span class="n">freqs</span><span class="o">&gt;</span><span class="mf">30.0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">freqs</span><span class="o">&lt;</span><span class="mf">45.0</span><span class="p">)]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">h_ave</span><span class="p">[</span><span class="n">n_file</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">s_ave</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show all channel names</span>
+<span class="n">epochs</span><span class="o">.</span><span class="n">ch_names</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Fp2&#39;,
+ &#39;F8&#39;,
+ &#39;T4&#39;,
+ &#39;T6&#39;,
+ &#39;O2&#39;,
+ &#39;Fp1&#39;,
+ &#39;F7&#39;,
+ &#39;T3&#39;,
+ &#39;T5&#39;,
+ &#39;O1&#39;,
+ &#39;F4&#39;,
+ &#39;C4&#39;,
+ &#39;P4&#39;,
+ &#39;F3&#39;,
+ &#39;C3&#39;,
+ &#39;P3&#39;,
+ &#39;Fz&#39;,
+ &#39;Cz&#39;,
+ &#39;Pz&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show delta/ theta/ alpha/ beta/ gamma activation head for healthies</span>
+<span class="n">plot_topomap</span><span class="p">(</span><span class="n">h_ave</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">info</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.005</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show delta/ theta/ alpha/ beta/ gamma activation head for schizophrenics</span>
+<span class="n">plot_topomap</span><span class="p">(</span><span class="n">sh_ave</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">info</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.005</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#detect which electrodes might be of critical interest in comparison between healthies and schizophrenics for delta activation</span>
+<span class="n">delta_healthy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;F8&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="s2">&quot;F7&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">6</span><span class="p">],</span><span class="s2">&quot;Cz&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">17</span><span class="p">]})</span>
+<span class="n">delta_healthy</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">delta_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;F8&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="s2">&quot;F7&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">6</span><span class="p">],</span><span class="s2">&quot;Cz&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">17</span><span class="p">]})</span>
+<span class="n">delta_schizo</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;schizo&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#detect which electrodes might be of critical interest in comparison between healthies and schizophrenics for theta activation</span>
+<span class="n">theta_healthy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Fz&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">16</span><span class="p">],</span><span class="s2">&quot;Cz&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">17</span><span class="p">]})</span>
+<span class="n">theta_healthy</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">theta_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Fz&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">16</span><span class="p">],</span><span class="s2">&quot;Cz&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">17</span><span class="p">]})</span>
+<span class="n">theta_schizo</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;schizo&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#detect which electrodes might be of critical interest in comparison between healthies and schizophrenics for alpha activation, btw. for alpha almost all (except temporal) electrodes could be candidates</span>
+<span class="n">alpha_healthy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;C4&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">11</span><span class="p">],</span><span class="s2">&quot;P4&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">12</span><span class="p">],</span><span class="s2">&quot;F3&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">13</span><span class="p">],</span><span class="s2">&quot;C3&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">14</span><span class="p">],</span><span class="s2">&quot;P3&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">15</span><span class="p">],</span><span class="s2">&quot;Fz&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">16</span><span class="p">],</span><span class="s2">&quot;Cz&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">17</span><span class="p">],</span><span class="s2">&quot;Pz&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">18</span><span class="p">]})</span>
+<span class="n">alpha_healthy</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">alpha_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;C4&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">11</span><span class="p">],</span><span class="s2">&quot;P4&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">12</span><span class="p">],</span><span class="s2">&quot;F3&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">13</span><span class="p">],</span><span class="s2">&quot;C3&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">14</span><span class="p">],</span><span class="s2">&quot;P3&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">15</span><span class="p">],</span><span class="s2">&quot;Fz&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">16</span><span class="p">],</span><span class="s2">&quot;Cz&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">17</span><span class="p">],</span><span class="s2">&quot;Pz&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">18</span><span class="p">]})</span>
+<span class="n">alpha_schizo</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;schizo&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#detect which electrodes might be of critical interest in comparison between healthies and schizophrenics for beta activation</span>
+<span class="n">beta_healthy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;T5&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">8</span><span class="p">]})</span>
+<span class="n">beta_healthy</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">beta_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;T5&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">8</span><span class="p">]})</span>
+<span class="n">beta_schizo</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;schizo&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#detect which electrodes might be of critical interest in comparison between healthies and schizophrenics for gamma activation</span>
+<span class="n">gamma_healthy</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;T4&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span><span class="s2">&quot;T3&quot;</span><span class="p">:</span><span class="n">h_ave</span><span class="p">[:,</span><span class="mi">7</span><span class="p">]})</span>
+<span class="n">gamma_healthy</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">gamma_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;T4&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span><span class="s2">&quot;T3&quot;</span><span class="p">:</span><span class="n">sh_ave</span><span class="p">[:,</span><span class="mi">7</span><span class="p">]})</span>
+<span class="n">gamma_schizo</span><span class="p">[</span><span class="s2">&quot;group&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s2">&quot;schizo&quot;</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define critical electrodes for delta acitvation</span>
+<span class="n">delta_schizo</span> <span class="o">=</span> <span class="n">delta_schizo</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">delta_healthy</span><span class="p">)</span>
+<span class="n">delta_schizo</span> <span class="o">=</span> <span class="n">delta_schizo</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">delta_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">delta_schizo</span><span class="p">,</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">,</span><span class="s2">&quot;group&quot;</span><span class="p">],</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;F8&quot;</span><span class="p">,</span><span class="s2">&quot;F7&quot;</span><span class="p">,</span><span class="s2">&quot;Cz&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define critical electrodes for theta acitvation</span>
+<span class="n">theta_schizo</span> <span class="o">=</span> <span class="n">theta_schizo</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">theta_healthy</span><span class="p">)</span>
+<span class="n">theta_schizo</span> <span class="o">=</span> <span class="n">theta_schizo</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">theta_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">theta_schizo</span><span class="p">,</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">,</span><span class="s2">&quot;group&quot;</span><span class="p">],</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Fz&quot;</span><span class="p">,</span><span class="s2">&quot;Cz&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define critical electrodes for alpha acitvation</span>
+<span class="n">alpha_schizo</span> <span class="o">=</span> <span class="n">alpha_schizo</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">alpha_healthy</span><span class="p">)</span>
+<span class="n">alpha_schizo</span> <span class="o">=</span> <span class="n">alpha_schizo</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">alpha_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">alpha_schizo</span><span class="p">,</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">,</span><span class="s2">&quot;group&quot;</span><span class="p">],</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;C4&quot;</span><span class="p">,</span><span class="s2">&quot;P4&quot;</span><span class="p">,</span><span class="s2">&quot;F3&quot;</span><span class="p">,</span><span class="s2">&quot;C3&quot;</span><span class="p">,</span><span class="s2">&quot;P3&quot;</span><span class="p">,</span><span class="s2">&quot;Fz&quot;</span><span class="p">,</span><span class="s2">&quot;Cz&quot;</span><span class="p">,</span><span class="s2">&quot;Pz&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define critical electrodes for beta acitvation</span>
+<span class="n">beta_schizo</span> <span class="o">=</span> <span class="n">beta_schizo</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">beta_healthy</span><span class="p">)</span>
+<span class="n">beta_schizo</span> <span class="o">=</span> <span class="n">beta_schizo</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">beta_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">beta_schizo</span><span class="p">,</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">,</span><span class="s2">&quot;group&quot;</span><span class="p">],</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;T5&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define critical electrodes for gamma acitvation</span>
+<span class="n">gamma_schizo</span> <span class="o">=</span> <span class="n">gamma_schizo</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gamma_healthy</span><span class="p">)</span>
+<span class="n">gamma_schizo</span> <span class="o">=</span> <span class="n">gamma_schizo</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">gamma_schizo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">gamma_schizo</span><span class="p">,</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">,</span><span class="s2">&quot;group&quot;</span><span class="p">],</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;T4&quot;</span><span class="p">,</span><span class="s2">&quot;T3&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load and show swarm and box plots for average delta activation for healthies and schizophrenics for F8, F7 and Cz</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">delta_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">artists</span><span class="p">:</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">patch</span><span class="o">.</span><span class="n">get_facecolor</span><span class="p">()</span>
+    <span class="n">patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">((</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mf">.3</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">delta_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load and show swarm and box plots for average theta activation for healthies and schizophrenics for Fz and Cz</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">theta_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">artists</span><span class="p">:</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">patch</span><span class="o">.</span><span class="n">get_facecolor</span><span class="p">()</span>
+    <span class="n">patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">((</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mf">.3</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">theta_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load and show swarm and box plots for average alpha activation for healthies and schizophrenics for C4, P4, F3, C3, P3, Fz, Cz, Pz</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">alpha_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">artists</span><span class="p">:</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">patch</span><span class="o">.</span><span class="n">get_facecolor</span><span class="p">()</span>
+    <span class="n">patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">((</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mf">.3</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">alpha_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load and show swarm and box plots for average beta activation for healthies and schizophrenics for T5</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">beta_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">artists</span><span class="p">:</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">patch</span><span class="o">.</span><span class="n">get_facecolor</span><span class="p">()</span>
+    <span class="n">patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">((</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mf">.3</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">beta_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load and show swarm and box plots for average gamma activation for healthies and schizophrenics for T4 and T3</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gamma_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">patch</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">artists</span><span class="p">:</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">patch</span><span class="o">.</span><span class="n">get_facecolor</span><span class="p">()</span>
+    <span class="n">patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">((</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mf">.3</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">gamma_schizo</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s2">&quot;group&quot;</span><span class="p">,</span><span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average delta activation of F8 for healthies and schizophrenics to compare them statistically</span>
+<span class="n">h_F8</span> <span class="o">=</span> <span class="n">delta_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">delta_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;F8&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">delta_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;healthy&quot;</span><span class="p">)]</span>
+<span class="n">s_F8</span> <span class="o">=</span> <span class="n">delta_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">delta_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;F8&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">delta_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;schizo&quot;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#do independent t-test for the two variables to find out if there is a significant difference</span>
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">h_F8</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">s_F8</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=2.014769507827961, pvalue=0.05448583575057455)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average theta activation of Cz for healthies and schizophrenics to compare them statistically</span>
+<span class="n">h_Cz</span> <span class="o">=</span> <span class="n">theta_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">theta_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Cz&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">theta_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;healthy&quot;</span><span class="p">)]</span>
+<span class="n">s_Cz</span> <span class="o">=</span> <span class="n">theta_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">theta_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Cz&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">theta_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;schizo&quot;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#do independent t-test for the two variables to find out if there is a significant difference</span>
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">h_Cz</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">s_Cz</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=0.9678150389704233, pvalue=0.342062534997258)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average alpha activation of Pz for healthies and schizophrenics to compare them statistically</span>
+<span class="n">h_Pz</span> <span class="o">=</span> <span class="n">alpha_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">alpha_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Pz&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">alpha_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;healthy&quot;</span><span class="p">)]</span>
+<span class="n">s_Pz</span> <span class="o">=</span> <span class="n">alpha_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">alpha_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Pz&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">alpha_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;schizo&quot;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#do independent t-test for the two variables to find out if there is a significant difference</span>
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">h_Pz</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">s_Pz</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=-0.9903178215794465, pvalue=0.33114734174667837)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average beta activation of T5 for healthies and schizophrenics to compare them statistically</span>
+<span class="n">h_T5</span> <span class="o">=</span> <span class="n">beta_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">beta_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;T5&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">beta_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;healthy&quot;</span><span class="p">)]</span>
+<span class="n">s_T5</span> <span class="o">=</span> <span class="n">beta_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">beta_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;T5&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">beta_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;schizo&quot;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#do independent t-test for the two variables to find out if there is a significant difference</span>
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">h_T5</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">s_T5</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=0.6010039892023995, pvalue=0.5536453239922046)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#load average gamma activation of T3 for healthies and schizophrenics to compare them statistically</span>
+<span class="n">h_T3</span> <span class="o">=</span> <span class="n">gamma_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">gamma_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;T3&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">gamma_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;healthy&quot;</span><span class="p">)]</span>
+<span class="n">s_T3</span> <span class="o">=</span> <span class="n">gamma_schizo</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">gamma_schizo</span><span class="p">[</span><span class="s1">&#39;variable&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;T3&quot;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">gamma_schizo</span><span class="p">[</span><span class="s1">&#39;group&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;schizo&quot;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#do independent t-test for the two variables to find out if there is a significant difference</span>
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">h_T3</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">s_T3</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">],</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ttest_indResult(statistic=-1.81202761730623, pvalue=0.08505950808332291)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Preprocessing_and_ICA_all_subjects_with_comments.html" title="previous page">Preprocessing_and_ICA_all_subject</a>
+    <a class='right-next' id="next-link" href="results.html" title="next page">Results</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright .<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

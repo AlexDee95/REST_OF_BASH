@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preprocessing_and_ICA_all_subject</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Epochs and bands" href="Epochs_and_bands_with_comments_without_graphics.html" />
+    <link rel="prev" title="Preprocessing of EEG data" href="Preprocessing_with_comments_without_graphics.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Overview &amp; motivation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project.html">
+   Project outline &amp; management plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data.html">
+   Dataset &amp; management plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pre_registration.html">
+   Open lab notebook
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="data_analyses.html">
+   Data analysis
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Preprocessing_with_comments_without_graphics.html">
+     Preprocessing of EEG data
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Preprocessing_and_ICA_all_subject
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Epochs_and_bands_with_comments_without_graphics.html">
+     Epochs and bands
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="results.html">
+   Results
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="poster_manuscript.html">
+   Poster &amp; manuscript
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_access.html">
+   Data access
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="CoC.html">
+   GORELLA Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Preprocessing_and_ICA_all_subjects_with_comments.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/G0RELLA/gorella_project_template"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/G0RELLA/gorella_project_template/issues/new?title=Issue%20on%20page%20%2FPreprocessing_and_ICA_all_subjects_with_comments.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/G0RELLA/gorella_project_template/edit/master/lecture/Preprocessing_and_ICA_all_subjects_with_comments.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/G0RELLA/gorella_project_template/master?urlpath=tree/lecture/Preprocessing_and_ICA_all_subjects_with_comments.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="preprocessing-and-ica-all-subject">
+<h1>Preprocessing_and_ICA_all_subject<a class="headerlink" href="#preprocessing-and-ica-all-subject" title="Permalink to this headline">¶</a></h1>
+<p>Preprocessing and ICA</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mne</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">mne.channels</span> <span class="kn">import</span> <span class="n">make_standard_montage</span>
+<span class="kn">from</span> <span class="nn">mne.io</span> <span class="kn">import</span> <span class="n">read_raw_edf</span>
+<span class="kn">from</span> <span class="nn">mne.viz</span> <span class="kn">import</span> <span class="n">plot_events</span> 
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">find_events</span>
+
+<span class="kn">from</span> <span class="nn">mne.preprocessing</span> <span class="kn">import</span> <span class="p">(</span><span class="n">ICA</span><span class="p">,</span> <span class="n">create_eog_epochs</span><span class="p">,</span> <span class="n">create_ecg_epochs</span><span class="p">,</span>
+                               <span class="n">corrmap</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define filename</span>
+<span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s01.edf&quot;</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># loading files </span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s01.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s02.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s03.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s04.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s05.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s06.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s07.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s08.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s09.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s10.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s11.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s12.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s13.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/s14.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h01.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h02.edf&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h03.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h04.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h05.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h06.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h07.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h08.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h09.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h10.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h11.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h12.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h13.edf&quot;</span><span class="p">,</span> 
+         <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC/h14.edf&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># creating an own template as reference for ICA</span>
+<span class="n">template</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="mf">0.94491604</span><span class="p">,</span>  <span class="mf">0.2894043</span> <span class="p">,</span> <span class="o">-</span><span class="mf">0.01358259</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.10380207</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.12087584</span><span class="p">,</span>
+                     <span class="mf">1.06496116</span><span class="p">,</span>  <span class="mf">0.4053908</span> <span class="p">,</span> <span class="o">-</span><span class="mf">0.02073163</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.07473682</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.10292878</span><span class="p">,</span>
+                     <span class="mf">0.2996572</span> <span class="p">,</span>  <span class="mf">0.04038614</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.04146407</span><span class="p">,</span>  <span class="mf">0.31626096</span><span class="p">,</span>  <span class="mf">0.09097505</span><span class="p">,</span>
+                     <span class="o">-</span><span class="mf">0.02723849</span><span class="p">,</span>  <span class="mf">0.3196638</span> <span class="p">,</span>  <span class="mf">0.04634076</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.00174722</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># first ICA with &quot;Fp1&quot; and &quot;Fp2&quot; as reference (not so nice output -&gt; using a template)</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mne</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">mne.channels</span> <span class="kn">import</span> <span class="n">make_standard_montage</span>
+<span class="kn">from</span> <span class="nn">mne.io</span> <span class="kn">import</span> <span class="n">read_raw_edf</span>
+<span class="kn">from</span> <span class="nn">mne.viz</span> <span class="kn">import</span> <span class="n">plot_events</span> 
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">find_events</span>
+
+<span class="kn">from</span> <span class="nn">mne.preprocessing</span> <span class="kn">import</span> <span class="p">(</span><span class="n">ICA</span><span class="p">,</span> <span class="n">create_eog_epochs</span><span class="p">,</span> <span class="n">create_ecg_epochs</span><span class="p">,</span>
+                               <span class="n">corrmap</span><span class="p">)</span> 
+
+<span class="n">mne</span><span class="o">.</span><span class="n">sys_info</span><span class="p">()</span>
+
+
+
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_edf</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">info</span>
+    <span class="n">montage</span> <span class="o">=</span> <span class="n">make_standard_montage</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;standard_1020&quot;</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">set_montage</span><span class="p">(</span><span class="n">montage</span><span class="p">)</span>
+    <span class="c1">#data.plot_sensors();</span>
+    <span class="c1">#data.plot_psd(average=True);</span>
+    <span class="c1">#data.plot_psd(average=True,fmax=50);</span>
+    <span class="c1">#data.plot_psd(average=False, fmax=50);</span>
+    <span class="c1">#%matplotlib notebook</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">scalings</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">eeg</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">));</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">data</span>
+    <span class="n">raw</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">l_freq</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                     <span class="n">h_freq</span><span class="o">=</span><span class="mf">45.0</span><span class="p">,</span>
+                     <span class="n">filter_length</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                     <span class="n">l_trans_bandwidth</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                     <span class="n">h_trans_bandwidth</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                     <span class="n">method</span><span class="o">=</span><span class="s1">&#39;fir&#39;</span><span class="p">,</span>
+                     <span class="n">phase</span><span class="o">=</span><span class="s1">&#39;zero&#39;</span><span class="p">,</span>
+                     <span class="n">fir_window</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span>
+                     <span class="n">fir_design</span><span class="o">=</span><span class="s1">&#39;firwin&#39;</span><span class="p">)</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">set_eeg_reference</span><span class="p">(</span><span class="n">ref_channels</span><span class="o">=</span><span class="s2">&quot;average&quot;</span><span class="p">)</span>
+    <span class="n">eog_evoked</span> <span class="o">=</span> <span class="n">create_eog_epochs</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span> <span class="n">ch_name</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Fp1&quot;</span><span class="p">,</span><span class="s2">&quot;Fp2&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">average</span><span class="p">()</span>
+    <span class="n">eog_evoked</span><span class="o">.</span><span class="n">apply_baseline</span><span class="p">(</span><span class="n">baseline</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2</span><span class="p">))</span>
+    <span class="n">eog_evoked</span><span class="o">.</span><span class="n">plot_joint</span><span class="p">();</span>
+    <span class="n">filt_raw</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">filt_raw</span> <span class="o">=</span> <span class="n">filt_raw</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">l_freq</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">h_freq</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">ica</span> <span class="o">=</span> <span class="n">ICA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;fastica&quot;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">97</span><span class="p">)</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">filt_raw</span><span class="p">)</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">plot_components</span><span class="p">();</span>
+    <span class="c1">#ica.plot_sources(raw);</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">exclude</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># find which ICs match the EOG pattern</span>
+    <span class="n">eog_indices</span><span class="p">,</span> <span class="n">eog_scores</span> <span class="o">=</span> <span class="n">ica</span><span class="o">.</span><span class="n">find_bads_eog</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span> <span class="n">ch_name</span><span class="o">=</span><span class="s2">&quot;Fp1&quot;</span><span class="p">,</span> <span class="n">measure</span><span class="o">=</span><span class="s2">&quot;correlation&quot;</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.75</span><span class="p">)</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">exclude</span> <span class="o">=</span> <span class="n">eog_indices</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">plot_scores</span><span class="p">(</span><span class="n">eog_scores</span><span class="p">);</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">plot_sources</span><span class="p">(</span><span class="n">eog_evoked</span><span class="p">);</span>
+    <span class="c1"># ica.apply() changes the Raw object in-place, so let&#39;s make a copy first:</span>
+    <span class="n">reconst_raw</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">reconst_raw</span><span class="p">)</span>
+    <span class="n">raw</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">raw</span><span class="p">),</span>
+             <span class="n">show_scrollbars</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+    <span class="n">reconst_raw</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">raw</span><span class="p">),</span>
+                     <span class="n">show_scrollbars</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+    <span class="n">reconst_raw</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/&quot;</span><span class="o">+</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;-raw.fif&quot;</span><span class="p">)</span>
+    <span class="k">del</span> <span class="n">reconst_raw</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># second ICA with template as reference</span>
+<span class="c1"># position of the eeg sensors on the head</span>
+<span class="n">montage</span> <span class="o">=</span> <span class="n">make_standard_montage</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;standard_1020&quot;</span><span class="p">)</span>
+
+<span class="c1"># </span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">subject</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">read_raw_edf</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">raw</span><span class="o">.</span><span class="n">set_montage</span><span class="p">(</span><span class="n">montage</span><span class="p">)</span>
+    <span class="c1"># interpolate bad channels</span>
+    <span class="k">if</span> <span class="n">subject</span> <span class="o">==</span> <span class="s2">&quot;s12.edf&quot;</span><span class="p">:</span>
+        <span class="n">raw</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s2">&quot;bads&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;T5&quot;</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="n">subject</span> <span class="o">==</span> <span class="s2">&quot;h10.edf&quot;</span><span class="p">:</span>
+        <span class="n">raw</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s2">&quot;bads&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Fp1&quot;</span><span class="p">,</span> <span class="s2">&quot;Fz&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">raw</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s2">&quot;bads&quot;</span><span class="p">]:</span>
+        <span class="n">raw</span><span class="o">.</span><span class="n">interpolate_bads</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;accurate&quot;</span><span class="p">)</span>
+        
+    <span class="n">raw</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">l_freq</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                     <span class="n">h_freq</span><span class="o">=</span><span class="mf">45.0</span><span class="p">,</span>
+                     <span class="n">filter_length</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                     <span class="n">l_trans_bandwidth</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                     <span class="n">h_trans_bandwidth</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                     <span class="n">method</span><span class="o">=</span><span class="s1">&#39;fir&#39;</span><span class="p">,</span>
+                     <span class="n">phase</span><span class="o">=</span><span class="s1">&#39;zero&#39;</span><span class="p">,</span>
+                     <span class="n">fir_window</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span>
+                     <span class="n">fir_design</span><span class="o">=</span><span class="s1">&#39;firwin&#39;</span><span class="p">)</span>
+    <span class="n">raw</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">scalings</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">eeg</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">),</span> <span class="n">start</span><span class="o">=</span><span class="mf">150.0</span><span class="p">);</span>
+    
+    <span class="n">filt_raw</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">filt_raw</span> <span class="o">=</span> <span class="n">filt_raw</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">l_freq</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">h_freq</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">ica</span> <span class="o">=</span> <span class="n">ICA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;fastica&quot;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">97</span><span class="p">)</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">filt_raw</span><span class="p">,</span> <span class="n">reject</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">eeg</span><span class="o">=</span><span class="mf">250e-6</span><span class="p">))</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">plot_components</span><span class="p">();</span>
+    
+    <span class="n">corrmap</span><span class="p">(</span><span class="n">icas</span><span class="o">=</span><span class="p">[</span><span class="n">ica</span><span class="p">],</span> <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.85</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;blink&quot;</span><span class="p">)</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">exclude</span> <span class="o">=</span> <span class="n">ica</span><span class="o">.</span><span class="n">labels_</span><span class="p">[</span><span class="s2">&quot;blink&quot;</span><span class="p">]</span>
+    
+    <span class="n">reconst_raw</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">ica</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">reconst_raw</span><span class="p">)</span>
+    <span class="n">reconst_raw</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">scalings</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">eeg</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">),</span> <span class="n">start</span><span class="o">=</span><span class="mf">150.0</span><span class="p">);</span>
+    <span class="n">reconst_raw</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/&quot;</span><span class="o">+</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;-raw.fif&quot;</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">del</span> <span class="n">reconst_raw</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#check epochs of one example subject</span>
+<span class="n">file</span> <span class="o">=</span> <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/reconst_raw/s06-raw.fif&quot;</span>
+<span class="kn">from</span> <span class="nn">mne.io</span> <span class="kn">import</span> <span class="n">read_raw_fif</span>
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">Epochs</span>
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">make_fixed_length_epochs</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_fif</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">epochs</span> <span class="o">=</span> <span class="n">make_fixed_length_epochs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">epochs</span><span class="o">.</span><span class="n">plot_psd_topomap</span><span class="p">(</span><span class="n">ch_type</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dB</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vlim</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.8</span><span class="p">),);</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="Preprocessing_with_comments_without_graphics.html" title="previous page">Preprocessing of EEG data</a>
+    <a class='right-next' id="next-link" href="Epochs_and_bands_with_comments_without_graphics.html" title="next page">Epochs and bands</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright .<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

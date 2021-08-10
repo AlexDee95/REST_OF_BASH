@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poster &amp; manuscript</title>
+    <title>Preprocessing of EEG data</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Data access" href="data_access.html" />
-    <link rel="prev" title="Results" href="results.html" />
+    <link rel="next" title="Preprocessing_and_ICA_all_subject" href="Preprocessing_and_ICA_all_subjects_with_comments.html" />
+    <link rel="prev" title="Data analysis" href="data_analyses.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -107,18 +107,18 @@
    Open lab notebook
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="data_analyses.html">
    Data analysis
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Preprocessing_with_comments_without_graphics.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Preprocessing of EEG data
     </a>
    </li>
@@ -139,8 +139,8 @@
    Results
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="poster_manuscript.html">
    Poster &amp; manuscript
   </a>
  </li>
@@ -195,9 +195,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/poster_manuscript.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Preprocessing_with_comments_without_graphics.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -215,10 +215,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/G0RELLA/gorella_project_template/issues/new?title=Issue%20on%20page%20%2Fposter_manuscript.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/G0RELLA/gorella_project_template/issues/new?title=Issue%20on%20page%20%2FPreprocessing_with_comments_without_graphics.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/G0RELLA/gorella_project_template/edit/master/lecture/poster_manuscript.md"><button
+        <a class="edit-button" href="https://github.com/G0RELLA/gorella_project_template/edit/master/lecture/Preprocessing_with_comments_without_graphics.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -233,29 +233,28 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/G0RELLA/gorella_project_template/master?urlpath=tree/lecture/Preprocessing_with_comments_without_graphics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scientific-poster">
-   Scientific poster
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scientific-talk">
-   Scientific talk
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -264,15 +263,105 @@
         
               <div>
                 
-  <div class="section" id="poster-manuscript">
-<h1>Poster &amp; manuscript<a class="headerlink" href="#poster-manuscript" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="scientific-poster">
-<h2>Scientific poster<a class="headerlink" href="#scientific-poster" title="Permalink to this headline">¶</a></h2>
-<p><img alt="Poster_REST_OF_BASH_02" src="https://user-images.githubusercontent.com/83163446/128735513-d7d20558-7b49-4b86-b479-c07b866a818c.jpg" /></p>
-<p>download: <a class="reference external" href="https://github.com/AlexDee95/REST_OF_BASH/files/6955745/Poster_REST_OF_BASH.pdf">Poster_REST_OF_BASH.pdf</a></p>
+  <div class="section" id="preprocessing-of-eeg-data">
+<h1>Preprocessing of EEG data<a class="headerlink" href="#preprocessing-of-eeg-data" title="Permalink to this headline">¶</a></h1>
+<p>to analyze the EEG data, we want to use the MNE template</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mne</span>
+<span class="kn">from</span> <span class="nn">mne.channels</span> <span class="kn">import</span> <span class="n">make_standard_montage</span>
+<span class="kn">from</span> <span class="nn">mne.io</span> <span class="kn">import</span> <span class="n">read_raw_edf</span>
+<span class="kn">from</span> <span class="nn">mne.viz</span> <span class="kn">import</span> <span class="n">plot_events</span> 
+<span class="kn">from</span> <span class="nn">mne</span> <span class="kn">import</span> <span class="n">find_events</span>
+</pre></div>
 </div>
-<div class="section" id="scientific-talk">
-<h2>Scientific talk<a class="headerlink" href="#scientific-talk" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#check mne info</span>
+<span class="n">mne</span><span class="o">.</span><span class="n">sys_info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#define path to data files</span>
+<span class="n">fname</span> <span class="o">=</span> <span class="s2">&quot;/mnt/c/Users/anna-/Desktop/HC&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#check general data attributes, here &quot;s01&quot; as example</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">read_raw_edf</span><span class="p">(</span><span class="n">fname</span> <span class="o">+</span> <span class="s2">&quot;/s01.edf&quot;</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">info</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show electrode arrangement of gathered eeg data -&gt; 19 electrodes according to 10-20-system</span>
+<span class="n">montage</span> <span class="o">=</span> <span class="n">make_standard_montage</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;standard_1020&quot;</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">set_montage</span><span class="p">(</span><span class="n">montage</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">plot_sensors</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show complete data of &quot;s01&quot;, power for all frequencies over the whole time</span>
+<span class="n">data</span><span class="o">.</span><span class="n">plot_psd</span><span class="p">(</span><span class="n">average</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show data of &quot;s01&quot; but only until 50 Hz </span>
+<span class="n">data</span><span class="o">.</span><span class="n">plot_psd</span><span class="p">(</span><span class="n">average</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">fmax</span><span class="o">=</span><span class="mi">50</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show data of &quot;s01&quot; until 50 Hz but not as average but the signal for every single electrode </span>
+<span class="n">data</span><span class="o">.</span><span class="n">plot_psd</span><span class="p">(</span><span class="n">average</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fmax</span><span class="o">=</span><span class="mi">50</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show detailed signal for every channel over the whole time</span>
+<span class="o">%</span><span class="k">matplotlib</span> notebook
+<span class="n">data</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">scalings</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">eeg</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#filter data with bandpass filter between 5 and 45 Hz</span>
+<span class="n">raw</span> <span class="o">=</span> <span class="n">data</span>
+<span class="n">raw</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+<span class="n">raw</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">l_freq</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">h_freq</span><span class="o">=</span><span class="mf">45.0</span><span class="p">,</span>
+<span class="n">filter_length</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+<span class="n">l_trans_bandwidth</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+<span class="n">h_trans_bandwidth</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+<span class="n">method</span><span class="o">=</span><span class="s1">&#39;fir&#39;</span><span class="p">,</span>
+<span class="n">phase</span><span class="o">=</span><span class="s1">&#39;zero&#39;</span><span class="p">,</span>
+<span class="n">fir_window</span><span class="o">=</span><span class="s1">&#39;hamming&#39;</span><span class="p">,</span>
+<span class="n">fir_design</span><span class="o">=</span><span class="s1">&#39;firwin&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -301,8 +390,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="results.html" title="previous page">Results</a>
-    <a class='right-next' id="next-link" href="data_access.html" title="next page">Data access</a>
+    <a class='left-prev' id="prev-link" href="data_analyses.html" title="previous page">Data analysis</a>
+    <a class='right-next' id="next-link" href="Preprocessing_and_ICA_all_subjects_with_comments.html" title="next page">Preprocessing_and_ICA_all_subject</a>
 
         </div>
         
