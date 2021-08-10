@@ -11,6 +11,9 @@
     * statistics
   * results
   * discuss results with recent literature
+ 
+![Timeline](https://user-images.githubusercontent.com/83163446/128827211-722e42fe-3826-4627-8010-be2aef54d54e.png)
+
 
 * What software will be utilized for the different project steps?
   * literature search: 
@@ -26,8 +29,12 @@
   * results:
     * Libre Office Impress 7.0
     * Microsoft PowerPoint 2016 
+   
 * What computing environment will be utilized for the different project steps?
-  * our Laptops with the different programms noticed above 
+  * our Laptops with Windows 10
+  * data preprocessing and analysis: Python (MNE)
+  * statistics: Python 
+  * poster creation: Microsoft Powerpoint and Libre Office
 
 * How will the steps be documented and version controlled?
   * steps will be documented on GitHub and on GitKraken
