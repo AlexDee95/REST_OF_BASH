@@ -1,19 +1,8 @@
 # Open lab notebook
 
-Please provide information on your workflow on a weekly basis, documenting steps, issues, etc. .
+## First Registration
+* registered: 15.05.2021
+* this registration was withdrawn because of changing our title and our project aim 
 
-### Week 1 (date)
-
-* Plan/aims
-
-* Outcomes
-
-* Issues
-
-### Week 2 (date)
-
-* Plan/aims
-
-* Outcomes
-
-* Issues
+## Second Registration
+* registered: 04.08.2021
