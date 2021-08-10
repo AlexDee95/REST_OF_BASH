@@ -267,9 +267,42 @@
 <div class="section" id="outcomes">
 <h2>Outcomes<a class="headerlink" href="#outcomes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Preprocessing</p></li>
-<li><p>ICA</p></li>
-<li><p>Frequency-Band Analysis</p></li>
+<li><p>Preprocessing</p>
+<ul>
+<li><p>imported modules:</p>
+<ul>
+<li><p>numpy</p></li>
+<li><p>mne</p></li>
+<li><p>os</p></li>
+</ul>
+</li>
+<li><p>set directory to data folder to load the .edf files</p></li>
+<li><p>check up the raw data</p></li>
+<li><p>creating a template for excluding eye artifacts</p></li>
+<li><p>build up ICA (seven components, save these files as .fif files)</p></li>
+</ul>
+</li>
+<li><p>Frequency-Band Analysis</p>
+<ul>
+<li><p>import mne and numpy module</p></li>
+<li><p>load average for each frequency activation for every person and define minimum/ maximum power frame</p></li>
+<li><p>load all filtered and preprocessed eeg/ .fif files for every person</p></li>
+<li><p>define the files referring to one of the two groups (schizophrenic and healthy persons)</p></li>
+<li><p>create epochs</p></li>
+<li><p>averaging the activity to do some statistics</p></li>
+<li><p>plot topomaps for all frequencies for the two groups</p></li>
+</ul>
+</li>
+<li><p>statistics</p>
+<ul>
+<li><p>import seaborn, pandas and matplotlib</p></li>
+<li><p>detect which electrodes might be of critical interest in comparison between healthies and schizophrenics for each frequency activation</p></li>
+<li><p>define critical electrodes for each frequency acitvation</p></li>
+<li><p>load and show swarm and box plots for average activation for healthies and schizophrenics</p></li>
+<li><p>import scipy</p></li>
+<li><p>do independent t-test for the two variables to find out if there is a significant difference</p></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">

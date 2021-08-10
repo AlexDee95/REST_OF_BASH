@@ -13,5 +13,27 @@
 ## Outcomes
 
 - Preprocessing
-- ICA
+  - imported modules: 
+    - numpy
+    - mne
+    - os
+  - set directory to data folder to load the .edf files
+  - check up the raw data
+  - creating a template for excluding eye artifacts
+  - build up ICA (seven components, save these files as .fif files)
+
 - Frequency-Band Analysis
+  - import mne and numpy module
+  - load average for each frequency activation for every person and define minimum/ maximum power frame
+  - load all filtered and preprocessed eeg/ .fif files for every person
+  - define the files referring to one of the two groups (schizophrenic and healthy persons)
+  - create epochs
+  - averaging the activity to do some statistics
+  - plot topomaps for all frequencies for the two groups
+- statistics
+  - import seaborn, pandas and matplotlib
+  - detect which electrodes might be of critical interest in comparison between healthies and schizophrenics for each frequency activation
+  - define critical electrodes for each frequency acitvation
+  - load and show swarm and box plots for average activation for healthies and schizophrenics
+  - import scipy
+  - do independent t-test for the two variables to find out if there is a significant difference
