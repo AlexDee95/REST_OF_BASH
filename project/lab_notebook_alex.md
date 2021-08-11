@@ -90,7 +90,7 @@
 
 # week 9 (5.7. - 12.7.)
 
-## creating epochs and bands
+## creating epochs and bands (with José):
 
 ### - setting up fixed epochs length (2 seconds)
 ### - averageing the activation for each person and each frequency
@@ -98,7 +98,7 @@
 
 # week 10 (12.7. - 19.7.)
 
-## frequency-band analysis
+## frequency-band analysis (with José):
 
 ### - detecting and defining critical electrodes for the comparison between healthy ones and schizophrenics
 ### - observing strongest differences in delta and gamma frequency bands
