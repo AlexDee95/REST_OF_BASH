@@ -87,3 +87,44 @@
 ### - worked out better with this refined version of the ica, data looked even better; some rare single channels with conspicuously bad signal had to be taken out manually
 ### - persons with still a problematic components which couldn't filtered out:
 #### - s06, s09, h04, h11, h12
+
+# week 9 (5.7. - 12.7.)
+
+## creating epochs and bands
+
+### - setting up fixed epochs length (2 seconds)
+### - averageing the activation for each person and each frequency
+### - averageing the activation for each group and each frequency
+
+# week 10 (12.7. - 19.7.)
+
+## frequency-band analysis
+
+### - detecting and defining critical electrodes for the comparison between healthy ones and schizophrenics
+### - observing strongest differences in delta and gamma frequency bands
+### - independent t-test for some critical electrodes in these bands
+#### - they seem to have a tendence to significance 
+
+# week 11 (19.7. - 26.7.)
+
+## analysing results of frequency-band analysis
+
+### - compare our results with those we found in the literature
+### - which of our prior hypotheses can be conformed and which ones can be rejected (?)
+### - which results do we want to present and how (?)
+
+# week 12 (26.7. - 2.8.)
+
+## first poster draft
+
+### - structuring our results
+### - what exactly is our theoretical background and where can our results placed in there (?)
+### - what should we put on our poster (?)
+
+# week 13 (2.8. - 9.8.)
+
+## finalysing poster, osf preregistration and Github page
+
+# week 14 (9.8. - 11.8.)
+
+## the finishing touches and preparing poster presentation
