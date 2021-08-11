@@ -110,7 +110,7 @@
 ## analysing results of frequency-band analysis
 
 ### - compare our results with those we found in the literature
-### - which of our prior hypotheses can be conformed and which ones can be rejected (?)
+### - which of our prior hypotheses can be confirmed and which ones can be rejected (?)
 ### - which results do we want to present and how (?)
 
 # week 12 (26.7. - 2.8.)
@@ -118,7 +118,7 @@
 ## first poster draft
 
 ### - structuring our results
-### - what exactly is our theoretical background and where can our results placed in there (?)
+### - what exactly is our theoretical background and where could our results be placed in there (?)
 ### - what should we put on our poster (?)
 
 # week 13 (2.8. - 9.8.)
