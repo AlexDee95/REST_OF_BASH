@@ -73,6 +73,8 @@ literature search:
 * doing the epochs analysis for all subject and plotting the results 
   * adaptation of the scales for the different frequencies
 * averaging the data separately for the frequencies (delta, theta, alpha, beta and gamma)
+  * averaging the activation for each person 
+  * averaging the activation for the two groups
 
 # week 11 (12.07. -18.07.)
 * plotting the averages for all frequencies and the two groups and making a short presentation about the results
@@ -80,8 +82,11 @@ literature search:
 * looking for prospective statistic analysis 
 * literature research because of the new aim of our project:
   * frequency-band analysis
-  * frequency processing in schizophrenia
+    * detecting and defining critical electrodes to compare schizophrenic patients with healthy persons
+    * observing greater differences in delta and gamma oscillations
+    * independent t-test for critical electrodes
 * creation of "code"-folder on github
+
 
 # week 12 (19.07. -25.07.)
 * read some paper about the activity of the different frequencies in schizophrenia compared to healthy controls
@@ -94,15 +99,19 @@ literature search:
   * Kirihara et al. (2012)
   * Hanslamyr et al. (2013)
   * Uhlhaas & Singer (2010)
+* comparing our results to these in the literature
+* which hypotheses we can confirm and which ones we must reject
 
 # week 13 (26.07. -01.08.)
 * on holiday
 
 # week 14 (01.08. -08.08.)
 * creation and designing the poster for the symposium
+* osf preregistration
 
 # week 15 (09.08. -15.08.)
 * updating GitHub documents
 * creating website of our GitHub reposatory
+* building up a presentation and our poster presentation
 * symposium
 
