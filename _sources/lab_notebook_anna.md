@@ -109,7 +109,7 @@ literature search:
 * creation and designing the poster for the symposium
 * osf preregistration
 
-# week 15 (09.08. -15.08.)
+# week 15 (09.08. -12.08.)
 * updating GitHub documents
 * creating website of our GitHub reposatory
 * building up a presentation and our poster presentation
