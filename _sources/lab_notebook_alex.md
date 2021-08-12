@@ -125,7 +125,7 @@
 
 # week 12 (26.7. - 2.8.)
 
-## first poster draft (with Libre Office 7.0)
+## first poster draft (with LibreOffice Impress 7.0)
 
 ### - structuring our results
 ### - what exactly is our theoretical background and where could our results be placed in there (?)
