@@ -109,7 +109,17 @@
 
 ## analysing results of frequency-band analysis
 
-### - compare our results with those we found in the literature
+### - compare our results with those we found in the literature:
+#### - Bates et al. (2009)
+#### - Mulert et al. (2010)
+#### - Light et al. (2006)
+#### - Moran et al. (2011)
+#### - Lisman (2012)
+#### - Basar-Eroglu et al. (2007)
+#### - Kirihara et al. (2012)
+#### - Hanslamyr et al. (2013)
+#### - Uhlhaas & Singer (2010)
+
 ### - which of our prior hypotheses can be confirmed and which ones can be rejected (?)
 ### - which results do we want to present and how (?)
 
@@ -123,8 +133,10 @@
 
 # week 13 (2.8. - 9.8.)
 
-## finalysing poster, osf preregistration and Github page
+## finalysing poster, osf preregistration and Github page/ public website of REST_OF_BASH via Github
 
 # week 14 (9.8. - 11.8.)
 
 ## the finishing touches and preparing poster presentation
+
+# 12.08.: POSTER SESSION! / SYMPOSIUM AND SCIENTIFIC TALK
