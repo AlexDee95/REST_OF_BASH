@@ -125,7 +125,7 @@
 
 # week 12 (26.7. - 2.8.)
 
-## first poster draft
+## first poster draft (with Libre Office 7.0)
 
 ### - structuring our results
 ### - what exactly is our theoretical background and where could our results be placed in there (?)
@@ -134,9 +134,11 @@
 # week 13 (2.8. - 9.8.)
 
 ## finalysing poster, osf preregistration and Github page/ public website of REST_OF_BASH via Github
+### - with Microsoft Powerpoint 2016
 
 # week 14 (9.8. - 11.8.)
 
 ## the finishing touches and preparing poster presentation
+### - with Microsoft Powerpoint 2016
 
 # 12.08.: POSTER SESSION! / SYMPOSIUM AND SCIENTIFIC TALK
